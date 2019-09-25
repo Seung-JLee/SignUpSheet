@@ -19,4 +19,4 @@ to work on the main.java in order to properly implement the necessary functions 
 
 Screenshots are included to show the two types of errors, as well as a successful run result. 
 
-![Missing Fields]home\seung\Desktop\Screenshot_1569412019.png
+![Missing Fields]Seung-JLee\Desktop\Screenshot_1569412019.png
