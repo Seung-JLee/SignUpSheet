@@ -64,5 +64,14 @@
             android:layout_height="wrap_content"
             android:text="@string/SaveButton" />
 
+        <TextView
+            android:id="@+id/resultp"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:text="@string/resultp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize ="32sp"/>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

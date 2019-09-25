@@ -1,6 +1,5 @@
 package edu.temple.signupsheet;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +20,7 @@ public class FormActivity extends AppCompatActivity {
     TextView savedmail;
     TextView savedpass;
     TextView savedconf;
-
+    TextView resultp;
     String savedNames;
 
     @Override
@@ -33,7 +32,7 @@ public class FormActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.PasswordSlot);
         confirm = (EditText) findViewById(R.id.ConfirmSlot);
         Button save = (Button) findViewById(R.id.SaveButton);
-
+        resultp = (TextView) findViewById(R.id.resultp);
 
         save.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -44,18 +43,20 @@ public class FormActivity extends AppCompatActivity {
                 String conf = confirm.getText().toString();
 
 
-                if (name == "" || mail == "" || pass == "" || conf == "") {
+                if (name.matches("") || mail.matches("") || pass.matches("") || conf.matches("")) {
                     Toast.makeText(getApplicationContext(), "Missing Information", Toast.LENGTH_LONG).show();
                 }
-                else if (pass != conf) {
+                else if (!pass.equals(conf)) {
                     Toast.makeText(getApplicationContext(), "Password Does Not Match", Toast.LENGTH_LONG).show();
                 }
                 else {
-                    Intent launchintent = new Intent(FormActivity.this, SecondActivity.class);
-                    launchintent.putExtra("name", name);
-                    startActivity(launchintent);
-
+                    resultp.setText("Welcome, " + name + ", to the SignUpForm App");
+                    userName.setText("");
+                    mailName.setText("");
+                    password.setText("");
+                    confirm.setText("");
                 }
+
             }
         });
     }

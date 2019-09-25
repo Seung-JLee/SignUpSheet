@@ -6,4 +6,5 @@
     <string name="PasswordSlot">Password</string>
     <string name="ConfirmSlot">Confirm Password</string>
     <string name="SaveButton">Save</string>
+    <string name="resultp"></string>
 </resources>
