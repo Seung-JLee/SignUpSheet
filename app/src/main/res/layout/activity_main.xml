@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="231dp">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="@string/Title"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize ="32sp"/>
+
+        <EditText
+            android:id="@+id/NameSlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/NameSlot"
+            android:autofillHints="name"/>
+
+        <EditText
+            android:id="@+id/MailSlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/MailSlot"
+            android:autofillHints="email"/>
+
+        <EditText
+            android:id="@+id/PasswordSlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/PasswordSlot"
+            android:autofillHints="password"/>
+
+        <EditText
+            android:id="@+id/ConfirmSlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/ConfirmSlot"
+            android:autofillHints="confirm"/>
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SaveButton" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

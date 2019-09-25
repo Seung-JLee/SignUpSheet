@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SignUpSheet</string>
+    <string name="Title">Sign Up Sheet</string>
+    <string name="NameSlot">Name</string>
+    <string name="MailSlot">E-mail</string>
+    <string name="PasswordSlot">Password</string>
+    <string name="ConfirmSlot">Confirm Password</string>
+    <string name="SaveButton">Save</string>
+</resources>
